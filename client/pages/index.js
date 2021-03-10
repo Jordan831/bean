@@ -1,6 +1,6 @@
 const Index=()=>{
     return (
-        <div>this is  esgin</div>
+        <div>this is  legel </div>
     )
 }
 
