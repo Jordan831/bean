@@ -10,8 +10,7 @@ permissions:
     owner: root
     group: root
     type:
-      - file
-      - directory        
+      - file       
 hooks:
    AfterInstall:
      - location: Scripts/RunResourceTests.sh
