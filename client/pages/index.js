@@ -1,6 +1,6 @@
 const Index=()=>{
     return (
-        <div>this is  legel </div>
+        <div>this is  legel and working page</div>
     )
 }
 
