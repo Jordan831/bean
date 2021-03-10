@@ -2,7 +2,7 @@ const express= require('express');
 const app = express();
 
 
-app.get("/broke",(req,res,next)=>{
+app.get("/broke/broke",(req,res,next)=>{
     try
     {
     const p=0;
