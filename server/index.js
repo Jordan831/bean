@@ -2,12 +2,12 @@ const express= require('express');
 const app = express();
 
 
-app.get("/",(req,res,next)=>{
+app.get("/broke",(req,res,next)=>{
     try
     {
     const p=0;
     p=1;
-    res.send("finally i solved problem and working on private network");
+    res.send("no like");
     }
     catch(err)
     {
