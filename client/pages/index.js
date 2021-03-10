@@ -1,6 +1,6 @@
 const Index=()=>{
     return (
-        <div>this is  legel and working page</div>
+        <div>i am vikram and working on project from here </div>
     )
 }
 
