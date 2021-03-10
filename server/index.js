@@ -2,7 +2,7 @@ const express= require('express');
 const app = express();
 
 app.get("/api",(req,res)=>{
-    res.send("this is hosting homepage");
+    res.send("finally i solved problem and working on private network");
 });
 
 
