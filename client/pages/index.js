@@ -1,6 +1,6 @@
 const Index=()=>{
     return (
-        <div>this is homepage esgin</div>
+        <div>this is  esgin</div>
     )
 }
 
