@@ -4,13 +4,14 @@ files:
   - source: /
     destination: /var/www/public_html
 permissions:
-  - object: /var/www/public_html/client/node_modules/.bin
+  - object: /var/www/public_html/client
     pattern: '**'
     mode: '777'
     owner: root
     group: root
     type:
-      - file       
+      - file  
+      - directory     
 hooks:
    AfterInstall:
      - location: Scripts/RunResourceTests.sh
