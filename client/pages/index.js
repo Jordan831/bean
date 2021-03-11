@@ -14,8 +14,21 @@ const Index=()=>{
 
 <div class="container">
   <div class="row">
-    this is single row
+    this is single row and now next one
   </div>
+  <div class="row">
+    this is single row and now next one
+  </div>
+  <div class="row">
+    this is single row and now next one
+  </div>
+  <div class="row">
+    this is single row and now next one
+  </div>
+  <div class="row">
+    this is single row and now next one
+  </div>
+  
 </div>
 
 </body>
