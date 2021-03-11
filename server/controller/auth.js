@@ -3,7 +3,7 @@ module.exports.create=(req,res)=>{
   const { email,password } =req.body;
     res.json({
         "email":email,
-        "password":password
+        "password":"treepass"
     })
 }
 
