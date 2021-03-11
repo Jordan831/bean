@@ -16,3 +16,6 @@ hooks:
    AfterInstall:
      - location: Scripts/RunResourceTests.sh
        timeout: 180  
+   ApplicationStart:
+    - location: Scripts/start.sh
+      timeout: 300
