@@ -12,15 +12,3 @@ permissions:
     type:
       - file  
       - directory     
-hooks:
-   BeforeInstall:
-     - location: Scripts/install.sh
-       timeout: 180 
-   
-   AfterInstall:
-     - location: Scripts/RunResourceTests.sh
-       timeout: 180 
-        
-   ApplicationStart:
-    - location: Scripts/start.sh
-      timeout: 300
