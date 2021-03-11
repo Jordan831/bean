@@ -1,0 +1,369 @@
+{{ assign var="hero_desktop_image" value="15149" }}
+{{ assign var="edit_hero_desktop_link" value="/admin/?view=gallery.editphoto&id= 272970"}}
+{{ assign var="hero_mobile_image" value="22888" }}
+{{ assign var="edit_mobile_desktop_link" value="/admin/?view=gallery.editphoto&id=272971"}}
+{{ assign var="static_banner" value="22891" }}
+{{ assign var="edit_static_banner_01" value="/admin/?view=gallery.editphoto&id=272974"}}
+{{ assign var="edit_static_banner_02" value="/admin/?view=gallery.editphoto&id=272973"}}
+{{ assign var="popular_cats" value="15151" }}
+{{ assign var="edit_popular_cats" value="/admin/?view=gallery.photos&id=15151"}}
+{{ assign var="popular_brands" value="22887" }}
+{{ assign var="edit_popular_brands" value="/admin/?view=gallery.photos&id=22887"}}
+{{ assign var="popular_products" value="1389222" }}
+{{ assign var="edit_popular_products" value="/admin/?view=product.list&category=1389222"}}
+{{ assign var="about_us" value="272933" }}
+{{ assign var="edit_about_us" value="/admin/?view=gallery.editphoto&id=272903"}}
+
+{{ if $env.auth.user }}
+{{ assign var="makeitso" value="xpress-view" }}
+{{/if}}
+
+<main id="wsmtk_body_homepage" class="homepage {{ $makeitso }}">
+
+<!-- Year Make Model -->
+<section class="home-ymm">
+    <div class="home-ymm__container ">
+        <!-- Title -->
+        <h2 class="home-heading home-ymm__heading">
+            <small>Shop By</small>
+            <strong>Vehicle</strong>
+        </h2>
+
+        <!-- Ymms -->
+        <div class="home-ymm__selects">
+            {{* AGS *}}
+       
+            <div class="side_attributes">
+                {{ solr_vehicle_selector }}
+            </div> 
+         
+       </div>
+    </div>
+</section>
+        
+<!-- SECTION :: Hero Image
+------------------------------------------------------------------------------------------------------------->
+<section id="section-hero" class="hero-image-container XPress-Master home-hero">
+    <div class="container WSMX_Xpress_Tile">
+        <div class="row">
+            {{ 
+                widget name='wsmx_heroimage'
+                cols='col-xs-12'
+                cols_per_row='1'
+                lazyClass='lazyload hidden-xs'
+                target='_self' 
+                span_wrap='false' 
+                show_info='false' 
+                separate_rows='' 
+                limit='1' 
+                instance='_d' 
+                id=$hero_desktop_image 
+                imgsize='F' 
+            }}
+            {{ 
+                widget name='wsmx_heroimage'
+                cols='col-xs-12'
+                cols_per_row='1'
+                lazyClass='lazyload visible-xs'
+                target='_self' 
+                span_wrap='false' 
+                show_info='false' 
+                separate_rows='' 
+                limit='1' 
+                instance='_m' 
+                id=$hero_mobile_image 
+                imgsize='F' 
+            }}
+        </div>
+    </div>
+
+
+<div id="WSMX_XPress_System--hero" class="itsmagical">
+        <button class="WSMX_XpressButton"></button>
+        <div class="WSMX_XPress">
+            <h6>HERO IMAGE</h6>
+            <ul>
+                <li>Desktop Image Dimensions: 1900px w x 500px h</li>
+                <li>Mobile Image Dimensions: 768px w x 500px h</li>
+                <li>Resolution: 72 dpi</li>
+                <li>Please keep in mind that images that aren't resized may crop weird and may affect the page's speed</li>
+            </ul>
+            <a href="{{ $edit_hero_desktop_link }}" class="btn btn-xpress-edit">EDIT DESKTOP IMAGE</a>
+            <br>
+            <a href="{{ $edit_mobile_desktop_link }}" class="btn btn-xpress-edit">EDIT MOBILE IMAGE</a>
+        </div>
+        </div>
+</section>
+    
+<!-- SECTION :: STATIC IMAGES - FULL WIDTH BANNER
+------------------------------------------------------------------------------------------------------------->
+<section id="section-sliderimages">
+    <div class="container">
+        <div class="row">
+            {{ widget name='owl2' id='22898' items='1' lazyloading='true' imgsize='F' nav='true' loop='true' dots='false' captions='false' prevText='<i class="fa fa-chevron-left" aria-hidden="true"></i>' nextText='<i class="fa fa-chevron-right" aria-hidden="true"></i>' animateOut='slideOutRight' animateIn='slideInLeft' }}
+        </div>
+    </div>
+</section>
+
+
+<!--<section id="section-staticimages" class="XPress-Master">
+        <div class="container WSMX_Xpress_Tile">
+            <div class="row">
+                <div class="static-img-container static-images static-set-01">
+                    {{* 
+                        widget name='wsmx_static_banners'
+                        cols='col-xs-12 col-md-6'
+                        cols_per_row='2'
+                        lazyClass='lazyload'
+                        target='_self' 
+                        span_wrap='true' 
+                        show_info='true' 
+                        separate_rows='false' 
+                        limit='2' 
+                        instance='_01' 
+                        id=$static_banner
+                        imgsize='F' 
+                    *}}
+                </div>
+            </div>
+        </div>
+    
+    
+<div id="WSMX_XPress_System--static" class="WSMX_XPress_System itsmagical">
+        <button class="WSMX_XpressButton"></button>
+        <div class="WSMX_XPress">
+            <h6>STATIC BANNERS</h6>
+            <ul>
+                <li>Image Dimensions: 555px x 200px</li>
+                <li>Resolution: 72 dpi</li>
+            </ul>
+            <a href="{{ $edit_static_banner_01 }}" class="btn btn-xpress-edit">EDIT LEFT IMAGE</a>
+            <br>
+            <a href="{{ $edit_static_banner_02 }}" class="btn btn-xpress-edit">EDIT RIGHT IMAGE</a>
+        </div>
+        </div>
+</section>-->
+    
+<!-- SECTION :: POPULAR CATEGORIES
+------------------------------------------------------------------------------------------------------------->
+<section id='section-new-cat' class="XPress-Master">
+<h2> tester  </h2>
+</section>
+<section id="section-popular-categories" class="XPress-Master">
+    <div class="container WSMX_Xpress_Tile">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="home-tep__container--titlecta titlewithcta row">
+                    <h2 class="home-heading home-tp__heading">Popular Categories </h2>
+                    <a href="/catalog.html" class="home-heading__link btn btn-primary"
+                        title="View All Catalog Categories">View all Categories</a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="popular-categories-container popularcats">
+                    <div class="popular-cats-layout-split">
+                        {{ 
+                            widget name='wsmx_popular_categories' 
+                            cols='col-xs-12' 
+                            cols_per_row='1' 
+                            lazy='' 
+                            lazyClass='lazyload' 
+                            target='_self' 
+                            span_wrap='true' 
+                            show_info='true' 
+                            description_top='' 
+                            separate_rows='false'  
+                            limit='1' 
+                            instance='_02_saleitem' 
+                            id='22893' 
+                            desc_btn='' 
+                            desc_btn_text='' 
+                            imgsize='F' 
+                        }}
+                        {{ 
+                            widget name='wsmx_popular_categories' 
+                            cols='col-xs-12 col-sm-6' 
+                            cols_per_row='2' 
+                            lazy='' 
+                            lazyClass='lazyload' 
+                            target='_self' 
+                            span_wrap='true' 
+                            show_info='true' 
+                            description_top='' 
+                            separate_rows='false'  
+                            limit='4' 
+                            instance='_02' 
+                            id='15151' 
+                            desc_btn='' 
+                            desc_btn_text='' 
+                            imgsize='F' 
+                        }}
+                    </div>
+                    <!-- This is not a normal DIV. It is a dynamic load element that adds styles locally -->
+                    <div class="lazyload" data-link="/files/layout-styles/popular-categories-02.css"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="WSMX_XPress_System--categories" class="itsmagical">
+    <button class="WSMX_XpressButton"></button>
+    <div class="WSMX_XPress">
+        <h6>POPULAR CATEGORIES</h6>
+        <ul>
+            <li>Image Dimesions: 700px w x 400px h</li>
+            <li>Resolution: 72 dpi</li>
+        </ul>
+        <a href="{{ $edit_popular_cats }}" class="btn btn-xpress-edit">EDIT CATEGORIES</a>
+    </div>
+    </div>
+</section>
+
+
+
+<!-- SECTION :: POPULAR BRANDS
+------------------------------------------------------------------------------------------------------------->
+<section id="section-popular-brands" class="XPress-Master">
+        <div class="container WSMX_Xpress_Tile">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="home-tep__container--titlecta titlewithcta row">
+                            <h2 class="home-heading home-tp__heading">Popular Brands </h2>
+                            <a href="/p-35832-brands.html" class="home-heading__link btn btn-primary"
+                                title="View All Brands">View all Brands</a>
+                        </div>
+                </div>
+                <div class="popular-brands-container-02 popularbrands">
+                    {{ 
+                        widget name='wsmx_popular_brands' 
+                        cols='col-xs-4 col-md-2' 
+                        cols_per_row='3' 
+                        lazy='' 
+                        lazyClass='lazyload' 
+                        target='_self' 
+                        span_wrap='true' 
+                        show_info='false' 
+                        description_top='' 
+                        separate_rows='false'  
+                        limit='12' 
+                        instance='_02' 
+                        id='22887' 
+                        desc_btn='' 
+                        desc_btn_text='' 
+                        imgsize='F' 
+                    }}
+            </div>
+            
+            <!-- This is not a normal DIV. It is a dynamic load element that adds styles locally -->
+            <div class="lazyload" data-link="/files/layout-styles/popular-brands-02.css"></div>
+            </div>
+        </div>
+    
+    
+<div id="WSMX_XPress_System--brands" class="itsmagical">
+        <button class="WSMX_XpressButton"></button>
+        <div class="WSMX_XPress">
+            <h6>POPULAR BRANDS</h6>
+            <ul>
+                <li>Image Dimensions: 195px w x 100px h</li>
+                <li>Resolution: 72 dpi</li>
+            </ul>
+            <a href="{{ $edit_popular_brands }}" class="btn btn-xpress-edit hidden-xs">EDIT BRANDS</a>
+        </div>
+        </div>
+</section>
+    
+<!-- SECTION :: POPULAR PRODUCTS
+------------------------------------------------------------------------------------------------------------->
+<section id="section-popular-products" class="XPress-Master">
+        <div class="container WSMX_Xpress_Tile">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="home-tep__container--titlecta titlewithcta row">
+                            <h2 class="home-heading home-tp__heading">Popular Products</h2>
+                            <a href="/c-1389192-shop-by-part.html" class="home-heading__link btn btn-primary"
+                                title="View All Catalog Categories">View All Products</a>
+                        </div>
+                </div>
+                <div class="popular-products-container-01 popularproducts">
+                   {{ widget name='owl2_feat_prods' show_inventory='false' show_availability_remarks='false' id=$popular_products instance='_feat_prods_owl' nav='false' dots='true' autoplay='true' margin='0' show_cart_button='true'  autoplayTimeout='5000' show_price='true' show_more_button='true' show_new_item_text='false' show_stockid='false' mobile='2' tablet='3' desktop='4' }}
+                </div>
+            </div>
+        </div>
+    
+    
+<div id="WSMX_XPress_System--products" class="itsmagical">
+        <button class="WSMX_XpressButton"></button>
+        <div class="WSMX_XPress">
+            <h6>POPULAR PRODUCTS</h6>
+            <ul>
+                <li>Click on the edit button on a product</li>
+                <li>Scroll down to categories section</li>
+                <li>Uncheck to remove from feature products section, check the box on a product to add it</li>
+            </ul>
+            <a href="{{ $edit_popular_products }}" class="btn btn-xpress-edit hidden-xs">EDIT PRODUCTS</a>
+        </div>
+        </div>
+</section>
+    
+<!-- SECTION :: ABOUT US
+------------------------------------------------------------------------------------------------------------->
+<section id="section-aboutus" class="XPress-Master">
+        <div class="container WSMX_Xpress_Tile">
+            <div class="row">
+                <div class="container-fluid about-us-01 about-us">
+                        <div class="container">
+                                <div class="home-tep__container--titlecta titlewithcta row">
+                                        <h2 class="home-heading home-tp__heading">About Us </h2>
+                                    </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    {{ 
+                                        widget name='wsmx_aboutus'
+                                        cols='col-xs-12'
+                                        cols_per_row='1'
+                                        lazyClass='lazyload'
+                                        target='_self' 
+                                        span_wrap='true' 
+                                        show_info='false' 
+                                        separate_rows='false' 
+                                        limit='1' 
+                                        instance='_01' 
+                                        id='22889' 
+                                        imgsize='F' 
+                                    }}
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <h3>WE DO IT ALL!</h3>
+                                        <p>Located in the heart of motocross country, MX PowerPlay is fueled by employees with a passion for adventure and the outdoors. Our sales associates, support, and owner are all motivated to sell you the best products, because they’ve used them themselves and know they work! MX PowerPlay sells off-road recreational vehicle parts and accessories of the utmost quality and value. Visit our Shop to see what we offer. Our mission is clear: We exist to ensure power sports enthusiasts never miss a ride That’s why we offer fast shipping and send most orders same day. If you’ve scheduled a ride for this weekend, the last thing we want to hear is how you sat by the mailbox waiting for parts or gear that didn’t arrive on time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    
+    
+<div id="WSMX_XPress_System--aboutus" class="itsmagical">
+        <button class="WSMX_XpressButton"></button>
+        <div class="WSMX_XPress">
+            <h6>ABOUT US</h6>
+            <ul>
+                <li>Image Dimensions: 548px w x 366px h</li>
+                <li>Resolution: 72 dpi</li>
+            </ul>
+            <a href="{{ $edit_about_us }}" class="btn btn-xpress-edit">EDIT IMAGE</a>
+        </div>
+        </div>
+</section>
+
+</main>
+<script>
+//Initiate WSM-XPress System
+$( ".WSMX_XpressButton" ).click(function(){
+    $(this).parent().toggleClass('isOn');
+    $(this).parent().parent().toggleClass('xpressOn');
+});
+
+</script>
+{{ debug }}
