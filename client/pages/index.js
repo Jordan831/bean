@@ -20,7 +20,7 @@ const Index=()=>{
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
     <div class="col-sm-4">
-      <h3>vikram 2</h3>
+      <h3>vikram 3</h3>        
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
@@ -28,7 +28,27 @@ const Index=()=>{
       <h3>vikram 3</h3>        
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
+    </div><div class="col-sm-4">
+    <h3>vikram 3</h3>        
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  </div><div class="col-sm-4">
+  <h3>vikram 3</h3>        
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+</div><div class="col-sm-4">
+<h3>vikram 3</h3>        
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+</div><div class="col-sm-4">
+<h3>vikram 3</h3>        
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+</div><div class="col-sm-4">
+<h3>vikram 3</h3>        
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+</div>
   </div>
 </div>
 
