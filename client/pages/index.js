@@ -14,19 +14,7 @@ const Index=()=>{
 
 <div class="container">
   <div class="row">
-    this is single row and now next one
-  </div>
-  <div class="row">
-    this is single row and now next one
-  </div>
-  <div class="row">
-    this is single row and now next one
-  </div>
-  <div class="row">
-    this is single row and now next one
-  </div>
-  <div class="row">
-    this is single row and now next one
+  i am vikram and i just created pipeline
   </div>
   
 </div>
