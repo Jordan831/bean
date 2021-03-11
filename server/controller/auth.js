@@ -4,3 +4,10 @@ module.exports.create=(req,res)=>{
         "message":json
     })
 }
+
+module.exports.login=(req,res)=>{
+   
+    res.json({
+        "message":"login"
+    })
+}
