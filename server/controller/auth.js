@@ -1,7 +1,8 @@
 module.exports.create=(req,res)=>{
-    var json = req.body;
+    var p = req.body;
+console.log(p);
     res.json({
-        "message":json
+        "message":p
     })
 }
 
