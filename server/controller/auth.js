@@ -1,6 +1,6 @@
 module.exports.create=(req,res)=>{
     var p = req.body;
-  const { email,password } =req.boy;
+  const { email,password } =req.body;
     res.json({
         "email":email,
         "password":password
