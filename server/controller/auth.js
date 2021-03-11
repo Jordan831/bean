@@ -1,8 +1,9 @@
 module.exports.create=(req,res)=>{
     var p = req.body;
-console.log(p);
+  const { email,password } =req.boy;
     res.json({
-        "message":p
+        "email":email,
+        "password":password
     })
 }
 
